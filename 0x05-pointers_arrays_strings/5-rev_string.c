@@ -12,7 +12,7 @@ void rev_string(char *s)
 
 	while (s[count++])
 		rev++;
-	for (count = rev - 1; count >= len / 2; count--)
+	for (count = rev - 1; count >= rev / 2; count--)
 	{
 		name = s[count];
 		s[count] = s[rev - count - 1];
