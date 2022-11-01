@@ -7,9 +7,10 @@
  */
 void print_rev(char *s)
 {
-	int rev = 0, count;
+	int rev;
+	int count;
 
-	while (s[count++])
+	while (s[rev])
 		rev++;
 
 	for (count = rev - 1; count >= 0; count--)
