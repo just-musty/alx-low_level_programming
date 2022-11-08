@@ -13,21 +13,25 @@ char *str_concat(char *s1, char *s2)
 	int i, p = 0, conc_word = 0;
 	char *conc;
 
-	if (s1 == 0)
+	if (s1 == NULL)
 		return ("");
-	if (s2 == 0)
+
+	if (s2 == NULL)
 		return ("");
 
 	for (i = 0; s1[i] || s2[i]; i++)
 		p++;
 
-	conc = malloc(p * sizeof(char));
+	conc = malloc(sizeof(char) * p);
 
 	if (conc == NULL)
 		return (NULL);
+
 	for (i = 0; s1[i]; i++)
 		conc[conc_word++] = s1[i];
+
 	for (i = 0; s2[i]; i++)
 		conc[conc_word++] = s2[i];
+
 	return (conc);
 }
