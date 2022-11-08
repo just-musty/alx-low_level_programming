@@ -10,7 +10,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, p, conc_word;
+	int i, p = 0, conc_word = 0;
 	char *conc;
 
 	if (s1 == 0)
@@ -21,7 +21,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s1[i] || s2[i]; i++)
 		p++;
 
-	conc = (char *)malloc(p * sizeof(char));
+	conc = malloc(p * sizeof(char));
 
 	if (conc == NULL)
 		return (NULL);
