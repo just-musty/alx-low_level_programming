@@ -1,10 +1,10 @@
-#ifndef 1-PI_H
-#define 1-PI_H
+#ifndef PI_H
+#define PI_H
 
 /**
- * file - 1-pi.h
+ * file: 1-pi.h
  *
- * desc -  a header file that defines a macro named PI
+ * desc: a header file that defines a macro named PI
  *	as an abbreviation for the token 3.14159265359.
  */
 
