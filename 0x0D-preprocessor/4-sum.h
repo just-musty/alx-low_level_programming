@@ -3,7 +3,8 @@
 
 /**
  * File: 4-sum.h
- *
+ * @x: first integer
+ * @y: second integer
  * desc: Write a function-like macro SUM(x, y)
  *	that computes the sum of the numbers x and y.
  */
