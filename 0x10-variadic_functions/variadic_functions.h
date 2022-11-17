@@ -4,8 +4,10 @@
 /**
  * file: variadic_functions_h
  * desc: Header file containing prototypes for all functions
- *       used in the 0x0F-variadic_functions directory.
+ *       used in the 0x10-variadic_functions directory.
  */
+
+#include <stdarg.h>
 
 int sum_them_all(const unsigned int n, ...);
 
